@@ -1,0 +1,11 @@
+# . /lsst/stack/loadLSST.sh
+# . ~lsstsw/bin/setup.sh
+# exec /usr/bin/scl enable devtoolset-3 git19 bash
+source /ssd/lsstsw/stack/loadLSST.bash
+setup lsst_apps
+setup git_lfs
+setup -r /home/wmwv/local/lsst/utils
+setup -r /home/wmwv/local/lsst/pipe_tasks
+setup -r /home/wmwv/local/lsst/ip_diffim
+setup -k -r /home/wmwv/local/lsst/obs_file
+setup display_ds9
